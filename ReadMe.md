@@ -6,7 +6,9 @@ descriptive labels.txt is saved under working directory.
 
 ###Collection of the raw data
 The data was collected from the a research project conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra.
+
 Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 
@@ -45,7 +47,7 @@ features$V2 cannot be used as the names of test_and_train due to duplicates. The
 
 Then a character vector combination of "subject", "activity" and all the members of features$V3 was applied as the names of the merged file.
 
-####code:
+####Code:
 features <- mutate(features,V3=paste(V1,V2))
 
 names(test) <- c("subject","activity",features$V3)
@@ -56,7 +58,7 @@ test_and_train <- bind_rows(test,train)
 ###STEP 2: Extracts only the measurements on the mean and standard deviation for each measurement:
 In this step all the variables with word mean and std are selected. In total there are 88 variables (2 identification variables - subject and activity + 86 measurements on mean and std).
 
-####code:
+####Code:
 test_and_train_tidy <- bind_cols (
   select(test_and_train, contains("subject")),
   select(test_and_train, contains("activity")),
@@ -66,7 +68,7 @@ test_and_train_tidy <- bind_cols (
 ###STEP 3: Uses descriptive activity names to name the activities in the data set 
 test_and_train$activity is factor, therefore it is easy to apply labels to the factor values in order to decode the codes to values. 
 
-####code:
+####Code:
 test_and_train_tidy$activity <- factor(test_and_train_tidy$activity, 
 									   levels=c(1,2,3,4,5,6), 
 									   labels = c("WALKING","WALKING_UPSTAIRS",
