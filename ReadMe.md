@@ -6,8 +6,8 @@ The R file can be read as six steps (one preparatory step + five steps asked in 
 
 ###Collection of the raw data
 The data was collected from the a research project conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra.\n
-Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip \n
-Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones \n 
+Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip </n>
+Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones </n> 
 
 
 ###Assumptions: 
