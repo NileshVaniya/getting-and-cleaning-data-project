@@ -39,7 +39,7 @@ test = sujects_text + y + x dim = (,563)
 train = subject_train + y + x 
 test_and_train = test + train
 
-####code:
+####Code:
 test <- bind_cols(subject_test,y_test,x_test)
 train <- bind_cols(subject_train,y_train,x_train)
 
