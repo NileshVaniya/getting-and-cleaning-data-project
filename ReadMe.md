@@ -86,8 +86,7 @@ This step was carried out in sublime as it is easy to manipulate text. The follo
 7. attach mean_of_ in front of all measurements columns
 8. save file as descriptive labels.txt
 
-###STEP 5: From the data set in step 4, creates a second, independent tidy data set with the average 
-of each variable for each activity and each subject:
+###STEP 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject:
 test_and_train_tidy is grouped by subject and activity and saved as subject_and_activity.
 Then each of variables of subject_and_activity is summarised by function mean.
 
