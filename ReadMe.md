@@ -47,7 +47,6 @@ features$V2 cannot be used as the names of test_and_train due to duplicates. The
 
 Then a character vector combination of "subject", "activity" and all the members of features$V3 was applied as the names of the merged file.
 
-####Code:
 features <- mutate(features,V3=paste(V1,V2))
 
 names(test) <- c("subject","activity",features$V3)
