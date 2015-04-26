@@ -1,15 +1,13 @@
-The R file can be read as seven steps (two preparatory steps + five steps asked in the assignment) 
-each one of them is briefly described here.
+The R file can be read as six steps (one preparatory step + five steps asked in the assignment) each one of them is briefly described here.
 
 ###Requirements: 
-######This run_analysis.R assumes that UCI HAR Dataset folder (unzipped data folder) is in working 
-directory. 
+######This run_analysis.R assumes that UCI HAR Dataset folder (unzipped data folder) is in working directory. 
 ######descriptive labels.txt is saved under working directory.
 
 ###Collection of the raw data
-The data was collected from the a research project conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra.
-Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The data was collected from the a research project conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra.\n
+Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip \n
+Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones \n 
 
 
 ###Assumptions: 
