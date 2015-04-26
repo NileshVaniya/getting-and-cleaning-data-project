@@ -2,9 +2,15 @@ The R file can be read as seven steps (two preparatory steps + five steps asked 
 each one of them is briefly described here.
 
 ###Requirements: 
-This run_analysis.R assumes that UCI HAR Dataset folder (unzipped data folder) is in working 
+######This run_analysis.R assumes that UCI HAR Dataset folder (unzipped data folder) is in working 
 directory. 
-descriptive labels.txt is saved under working directory.
+######descriptive labels.txt is saved under working directory.
+
+###Collection of the raw data
+The data was collected from the a research project conducted by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra.
+Link to data - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+Link to research project - http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 
 ###Assumptions: 
 This script assumes that dplyr, tidyr and data.table packages are installed.
@@ -80,15 +86,15 @@ test_and_train_tidy$activity <- factor(test_and_train_tidy$activity,
 This step was carried out in sublime as it is easy to manipulate text. The following steps were 
 followed to create descriptive variable names.
 
-Copy the names(test_and_train) into a txt file
-Remove numbers
-Remove Paranthesis
-Replace "-" with "_"
-Replace initial t with time and f with frequency
-Clean names to have capital letters only for a word combining two words e.g.BodyAcc & for axis
+#####Copy the names(test_and_train) into a txt file
+#####Remove numbers
+#####Remove Paranthesis
+#####Replace "-" with "_"
+#####Replace initial t with time and f with frequency
+#####Clean names to have capital letters only for a word combining two words e.g.BodyAcc & for axis
 names (x, y & z)
-attach mean_of_ in front of all measurements columns
-save file as descriptive labels.txt
+#####attach mean_of_ in front of all measurements columns
+#####save file as descriptive labels.txt
 
 ###STEP 5: From the data set in step 4, creates a second, independent tidy data set with the average 
 of each variable for each activity and each subject:
